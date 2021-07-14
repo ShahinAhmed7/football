@@ -68,16 +68,18 @@ h6 {
 }
 
 
+
+
 /*
  *****************************************
-    >>> | 02 Header CSS|
+    >>> | Header menu CSS|
  *****************************************
 */
 .container{
     max-width: 1160px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .navigation-grid {
@@ -128,8 +130,18 @@ header {
     background: tomato;
 }
 
+.humberger{
+    display: none;
+}
+
+/*
+ *****************************************
+    >>> | banner CSS|
+ *****************************************
+*/
 .banner{
     background: #2d24a0;
+    padding-bottom: 50px;
 }
 
 .banner-grid {
@@ -200,6 +212,19 @@ header {
     transition: .4s;
 }
 
+
+
+/*
+ *****************************************
+    >>> |  Player list CSS|
+ *****************************************
+*/
+.player-list {
+    padding-bottom: 150px;
+    padding-top: 75px;
+}
+
+
 .grid-item {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -222,3 +247,210 @@ header {
     color: #6c6c6c;
 }
 
+.player-list .container {
+    max-width: 1100px;
+}
+
+
+
+/*
+ *****************************************
+    >>> |  highlisghts CSS|
+ *****************************************
+*/
+.grid-highlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.let-content h1 {
+    font-size: 48px;
+    color: #0a0826;
+    margin-bottom: 5px;
+}
+
+.let-content p {
+    margin-top: 0;
+    line-height: 28px;
+}
+
+.let-content a {
+    display: inline-block;
+    width: 172px;
+    height: 44px;
+    background: #E02C6D;
+    text-align: center;
+    line-height: 44px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.let-content a i {
+    margin-left: 5px;
+}
+
+.let-content a:hover {
+    background: tomato;
+}
+
+
+
+/*
+ *****************************************
+    >>> | footer CSS|
+ *****************************************
+*/
+
+footer {
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 100px;
+}
+
+.footer-logo img {
+    max-width: 400px;
+}
+
+.footer-social-icon a {
+    height: 32px;
+    width: 32px;
+    background: #e7e7e8;
+    display: inline-block;
+    line-height: 34px;
+    color: #969bab;
+    border-radius: 50%;
+    margin: 0px 4px;
+}
+
+.footer-social-icon a:hover {
+    background: #e02c6d;
+    color: #fff;
+}
+
+.copyright p {
+    font-size: 18px;
+    color: #000000;
+}
+
+.footer-social-icon {
+    margin-top: 5px;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+
+/*
+ *****************************************
+    >>> | Responsive CSS|
+ *****************************************
+*/
+
+/* Medium Layout: 1200px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .banner-txt h1 {
+        font-size: 50px;
+    }
+}
+
+/* Tablet Layout: 991px. */
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+    nav li a {
+        padding-right: 10px;
+        font-size: 15px;
+    }
+    
+    .banner-txt h1 {
+        font-size: 30px;
+    }
+    
+    .let-content h1 {
+        font-size: 35px;
+    }
+    
+    br {
+        display: none;
+    }
+    .grid-item {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+/* Mobile Layout: */
+@media only screen and (max-width: 688px) {
+    
+    nav {
+        display: none;
+    }
+    
+    button.humberger {
+        display: block;
+        background: no-repeat;
+        border: none;
+        text-align: left;
+        font-size: 36px;
+        color: #fff;
+    }
+    
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .banner-txt h1 {
+        font-size: 36px;
+    }
+    
+    .banner-grid {
+        display: block;
+    }
+    
+    .banner-txt {
+        padding-top: 160px;
+    }
+    
+    .banner-img {
+        padding-top: 60px;
+    }
+    
+    .grid-item {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .let-content h1 {
+        font-size: 34px;
+    }
+    
+    .grid-highlights {
+        display: block;
+    }
+    
+    section.player-list {
+        padding-bottom: 70px;
+    }
+    
+    .let-content {
+        padding-bottom: 30px;
+    }
+    
+    br {
+        display: none;
+    }
+    
+    footer {
+        padding-top: 40px;
+    }
+    
+    .footer-logo img {
+        max-width: 250px;
+    }
+
+    
+ }   
+        
